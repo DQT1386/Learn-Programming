@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/LearnProgramming/v17
+/Algorithms/.vs/Algorithms
+/Algorithms/bin/Debug/net8.0
+/Algorithms/obj/Debug/net8.0
+/Algorithms/obj
+/ToDoList/.vs
+/ToDoList/bin/Debug/net8.0
+/ToDoList/obj
