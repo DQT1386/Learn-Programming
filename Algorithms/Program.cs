@@ -6,7 +6,7 @@ public class Practice
         return 0;
     }
 
-    /*
+    /*sdfsdf
      1. Viết một chương trình C# để kiểm tra xem một số có phải số nguyên tố hay không.
         Đầu vào:
         Một số nguyên không âm n (0 ≤ n ≤ 1 000 000)
