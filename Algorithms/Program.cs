@@ -3,16 +3,27 @@ public class Practice
 {
     public static int Main()
     {
+        PrimeNumber prime = new PrimeNumber();
+        Console.WriteLine("Nhap 1 so can kiem tra");
+        int num = int.Parse(Console.ReadLine());
+        bool result = prime.CheckPrimeNumber(num);
+        string message = "So " + num.ToString() + " is Prime:" + result.ToString();
+        //Console.WriteLine($"So {num} is Prime: {result}");
+        Console.WriteLine(message);
+        Console.ReadLine();
         return 0;
     }
 
-    /*sdfsdf
+    /*
      1. Viết một chương trình C# để kiểm tra xem một số có phải số nguyên tố hay không.
         Đầu vào:
         Một số nguyên không âm n (0 ≤ n ≤ 1 000 000)
         Đầu ra:
         Nếu n là số nguyên tố thì hàm checkPrimeNumber sẽ trả về true, ngược lại trả về false
 
+
+    Solution:
+         n chia lần lượt cho 2 đến n-1, nếu mà nó chia hết cho bất kì số nào thì return false, nếu không thì return true.
 
     2. Viết một chương trình C# để tìm giá trị sau khi đảo ngược thứ tự các chữ số của một số. Ví dụ 123 là kết quả của quá trình đảo ngược thứ
         tự các chữ số của 321.
