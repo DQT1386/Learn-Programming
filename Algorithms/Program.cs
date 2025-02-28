@@ -3,13 +3,18 @@ public class Practice
 {
     public static int Main()
     {
-        PrimeNumber prime = new PrimeNumber();
-        Console.WriteLine("Nhap 1 so can kiem tra");
+        NumberUtils prime = new NumberUtils();
+        //Console.WriteLine("Nhap 1 so can kiem tra");
+        //int num = int.Parse(Console.ReadLine());
+        //bool result = prime.CheckPrimeNumber(num);
+        //string message = "So " + num.ToString() + " is Prime:" + result.ToString();
+        ////Console.WriteLine($"So {num} is Prime: {result}");
+        //Console.WriteLine(message);
+        //Console.ReadLine();
+
         int num = int.Parse(Console.ReadLine());
-        bool result = prime.CheckPrimeNumber(num);
-        string message = "So " + num.ToString() + " is Prime:" + result.ToString();
-        //Console.WriteLine($"So {num} is Prime: {result}");
-        Console.WriteLine(message);
+        int result = prime.ReverseNum(num);
+        Console.WriteLine($"So {num} reverse is: {result}");
         Console.ReadLine();
         return 0;
     }
