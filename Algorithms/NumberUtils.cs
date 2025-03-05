@@ -30,5 +30,11 @@ namespace Algorithms
             int result = int.Parse(resultString);
             return result;
         }
+
+        public void Swap(int a, int b)
+        {
+
+            
+        }
     }
 }
