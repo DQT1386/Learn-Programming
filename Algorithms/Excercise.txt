@@ -1,0 +1,169 @@
+﻿1. Given a number n, we need to print its table. 
+
+	Examples : 
+
+	Input:  5
+	Output: 
+	5 * 1 = 5
+	5 * 2 = 10
+	5 * 3 = 15
+	5 * 4 = 20
+	5 * 5 = 25
+	5 * 6 = 30
+	5 * 7 = 35
+	5 * 8 = 40
+	5 * 9 = 45
+	5 * 10 = 50
+
+
+	Input:  2
+	Output: 
+	2 * 1 = 2
+	2 * 2 = 4
+	2 * 3 = 6
+	2 * 4 = 8
+	2 * 5 = 10
+	2 * 6 = 12
+	2 * 7 = 14
+	2 * 8 = 16
+	2 * 9 = 18
+	2 * 10 = 20
+
+
+2. Given a number n, find the sum of the first natural numbers.
+
+	Examples : 
+
+	Input: n = 3
+	Output: 6
+	Explanation: Note that 1 + 2 + 3 = 6
+
+	Input  : 5
+	Output : 15 
+	Explanation : Note that 1 + 2 + 3 + 4 + 5 = 15
+
+3. Given two numbers a and b, the task is to swap them.
+
+	Examples:
+
+	Input: a = 2, b = 3
+	Output: a = 3, b = 2
+
+	Input: a = 20, b = 0
+	Output: a = 0, b = 20
+
+	Input: a = 10, b = 10
+	Output: a = 10, b = 10 
+
+4. Given two integers n and m (m != 0). Find the number closest to n and divisible by m. If there is more than one such number, then output the one having maximum absolute value.
+
+	Examples: 
+
+	Input: n = 13, m = 4
+	Output: 12
+	Explanation: 12 is the closest to 13, divisible by 4.
+
+
+	Input: n = -15, m = 6
+	Output: -18
+	Explanation: Both -12 and -18 are closest to -15, but-18 has the maximum absolute value.
+
+
+5. You are given a cubic dice with 6 faces. All the individual faces have a number printed on them. The numbers are in the range of 1 to 6, like any ordinary dice. You will be provided with a face of this cube, your task is to guess the number on the opposite face of the cube.
+
+	Examples:
+
+	Input: n = 2
+	Output: 5
+	Explanation: For dice facing number 5 opposite face will have the number 2.
+
+
+	Input: 6 = 6
+	Output: 1
+
+6. Given Principal p, Rate r and Time t, the task is to calculate Simple Interest.
+
+	Examples :
+
+	Input: p = 10000, r = 5, t = 5 
+	Output:2500 
+	Explanation: We need to find simple interest on  Rs. 10,000 at the rate of 5% for 5  units of time.  
+
+
+	Input: p = 3000, r = 7, t = 1 
+	Output:210
+
+7. You are given two coordinates (x1, y1) and (x2, y2) of a two-dimensional graph. Find the distance between them.
+
+	Examples: 
+
+	Input : x1, y1 = (3, 4)
+			   x2, y2 = (7, 7)
+	Output : 5
+
+	Input : x1, y1 = (3, 4) 
+			   x2, y2 = (4, 3)
+	Output : 1.41421
+
+
+8. Given three sides, check whether triangle is valid or not. 
+
+	Examples:  
+
+	Input :  a = 7, b = 10, c = 5 
+	Output : Valid
+	We can draw a triangle with the given three edge lengths.
+
+	Input : a = 1, b = 10, c = 12 
+	Output : Invalid
+	We can not draw a triangle with the given three edge lengths.
+
+9. Given two rectangles, find if the given two rectangles overlap or not.
+	Note that a rectangle can be represented by two coordinates, top left and bottom right. So mainly we are given following four coordinates. 
+	l1: Top Left coordinate of first rectangle. 
+	r1: Bottom Right coordinate of first rectangle. 
+	l2: Top Left coordinate of second rectangle. 
+	r2: Bottom Right coordinate of second rectangle.
+
+	rectanglesOverlap
+
+	Examples:
+	Input: l1 = { 0, 10 }, r1 = { 10, 0 }, l2 = { 5, 5 }, r2 = { 15, 0 }
+	Output: Rectangles Overlap
+
+
+	Input: l1 = { 0, 10 }, r1 = { 10, 0 }, l2 = { -10, 5 }, r2 = { -1, 0 }
+	Output: Rectangles Don’t Overlap
+
+
+10. Given the number n (n >=0), find its factorial. Factorial of n is defined as 1 x 2 x … x n. For n = 0, factorial is 1. We are going to discuss iterative and recursive programs in this post.
+
+	Examples:
+
+	Input: n = 5
+	Output: 120
+	Explanation: 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+
+	Input: n = 4
+	Output: 24
+	Explanation: 4! = 4 * 3 * 2 * 1 = 24
+
+
+	Input: n = 0
+	Output: 1
+
+
+	Input: n = 1
+	Output: 1
+
+11. LCM of two numbers is the smallest number which can be divided by both numbers. 
+
+	Input :  a = 12, b = 18
+	Output :  36
+	36 is the smallest number divisible by both 12 and 18
+
+
+	Input :  a = 5, b = 11
+	Output :  55
+	55 is the smallest number divisible by both 5 and 11

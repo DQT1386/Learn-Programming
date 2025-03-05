@@ -1,0 +1,89 @@
+﻿https://www.geeksforgeeks.org/introduction-to-arrays-data-structure-and-algorithm-tutorials/
+
+1. Given an array arr[], the task is to print every alternate element of the array starting from the first element.
+
+Examples:
+
+Input: arr[] = [10, 20, 30, 40, 50]
+Output: 10 30 50
+Explanation: Print the first element (10), skip the second element (20), print the third element (30), skip the fourth element(40) and print the fifth element(50).
+
+
+Input: arr[] = [-5, 1, 4, 2, 12]
+Output: -5 4 12
+
+
+2. Linear Search Algorithm
+Last Updated : 28 Oct, 2024
+Given an array, arr of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn’t exist.
+
+Input: arr[] = [1, 2, 3, 4], x = 3
+Output: 2
+Explanation: There is one test case with array as [1, 2, 3 4] and element to be searched as 3. Since 3 is present at index 2, the output is 2.
+
+
+Input: arr[] = [10, 8, 30, 4, 5], x = 5
+Output: 4
+Explanation: For array [1, 2, 3, 4, 5], the element to be searched is 5 and it is at index 4. So, the output is 4.
+
+
+Input: arr[] = [10, 8, 30], x = 6
+Output: -1
+Explanation: The element to be searched is 6 and its not present, so we return -1.
+
+
+3. Largest element in an Array
+Last Updated : 27 Dec, 2024
+Given an array arr. The task is to find the largest element in the given array. 
+
+Examples: 
+
+Input: arr[] = [10, 20, 4]
+Output: 20
+Explanation: Among 10, 20 and 4, 20 is the largest. 
+
+
+Input: arr[] = [20, 10, 20, 4, 100]
+Output: 100
+
+
+
+4. Largest three distinct elements in an array
+Last Updated : 10 Dec, 2024
+Given an array arr[], the task is to find the top three largest distinct integers present in the array.
+
+Note: If there are less than three distinct elements in the array, then return the available distinct numbers in descending order.
+
+Examples :
+
+Input: arr[] = [10, 4, 3, 50, 23, 90]
+Output: [90, 50, 23]
+
+
+Input: arr[] = [10, 9, 9]
+Output: [10, 9]
+There are only two distinct elements
+
+
+Input: arr[] = [10, 10, 10]
+Output: [10]
+There is only one distinct element
+
+
+Input: arr[] = []
+Output: []
+
+5. Array Reverse – Complete Tutorial
+Last Updated : 25 Sep, 2024
+Given an array arr[], the task is to reverse the array. Reversing an array means rearranging the elements such that the first element becomes the last, the second element becomes second last and so on.
+
+Examples:
+
+Input: arr[] = {1, 4, 3, 2, 6, 5}  
+Output: {5, 6, 2, 3, 4, 1}
+Explanation: The first element 1 moves to last position, the second element 4 moves to second-last and so on.
+
+
+Input: arr[] = {4, 5, 1, 2} 
+Output: {2, 1, 5, 4}
+Explanation: The first element 4 moves to last position, the second element 5 moves to second last and so on.
