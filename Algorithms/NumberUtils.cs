@@ -31,10 +31,32 @@ namespace Algorithms
             return result;
         }
 
-        public void Swap(int a, int b)
+        public int FindFibonacci(int nth)
         {
+            // 0 1 1 2 3 5
+            if (nth == 1) return 0;
+            if(nth == 2) return 1;
 
-            
+            int nthMinusTwo = 0;
+            int nthMinusOne = 1;
+            int temp;
+            for(int i = 3; i <= nth; i++)
+            {
+                temp =  nthMinusOne + nthMinusTwo;
+                nthMinusTwo = nthMinusOne;
+                nthMinusOne = temp;
+            }
+            return nthMinusOne;
+        }
+
+        public int FindFibonacciRecursive(int nth)
+        {
+            // 0 1 1 2 3 5
+            if (nth == 1) return 0;
+            if (nth == 2) return 1;
+
+            int result = FindFibonacciRecursive(nth - 1) + FindFibonacciRecursive(nth - 2);
+            return result;
         }
     }
 }

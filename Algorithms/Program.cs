@@ -1,20 +1,25 @@
-﻿namespace Algorithms;
+﻿using System.Diagnostics;
+
+namespace Algorithms;
 public class Practice
 {
     public static int Main()
     {
         NumberUtils prime = new NumberUtils();
-        //Console.WriteLine("Nhap 1 so can kiem tra");
-        //int num = int.Parse(Console.ReadLine());
-        //bool result = prime.CheckPrimeNumber(num);
-        //string message = "So " + num.ToString() + " is Prime:" + result.ToString();
-        ////Console.WriteLine($"So {num} is Prime: {result}");
-        //Console.WriteLine(message);
-        //Console.ReadLine();
+        Console.WriteLine($"Enter n:");
+        int n = int.Parse(Console.ReadLine());
+        Stopwatch stopWatch = new Stopwatch();
+        stopWatch.Start();
+        
+        Console.WriteLine($"Fibonacci({n}) = {prime.FindFibonacciRecursive(n)}");
 
-        int num = int.Parse(Console.ReadLine());
-        int result = prime.ReverseNum(num);
-        Console.WriteLine($"So {num} reverse is: {result}");
+        stopWatch.Stop();
+        // Get the elapsed time as a TimeSpan value.
+        TimeSpan ts = stopWatch.Elapsed;
+
+        // Format and display the TimeSpan value.
+      
+        Console.WriteLine("RunTime " + ts.TotalSeconds);
         Console.ReadLine();
         return 0;
     }
