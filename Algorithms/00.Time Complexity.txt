@@ -1,0 +1,112 @@
+﻿
+FIND TIME COMPLEXITY OF THESE PROGRAM
+
+1. 
+for (int i = 1; i <= c; i++) 
+
+
+2. 
+for (int i = 1; i <= n; i = i + c) {
+    // some O(1) expressions
+ 
+    // O(1) expressions could be computations, assignments,
+    // or other constant time operations
+}
+ 
+// Second loop: Decrementing by 'c' from n to 1
+for (int i = n; i > 0; i = i - c) {
+    // some O(1) expressions
+ 
+    // O(1) expressions could be computations, assignments,
+    // or other constant time operations
+}
+
+3. 
+static void Main()
+    {
+        // Here c is any positive constant
+        int n = 10; // You can replace 10 with your desired
+                    // value of 'n'
+        int c = 2; // You can replace 2 with your desired
+                   // value of 'c'
+ 
+        // First loop
+        for (int i = 1; i <= n; i += c) {
+            for (int j = 1; j <= n; j += c) {
+                // some O(1) expressions
+                Console.WriteLine("Expression at (" + i
+                                  + ", " + j + ")");
+            }
+        }
+ 
+        // Second loop
+        for (int i = n; i > 0; i -= c) {
+            for (int j = i + 1; j <= n; j += c) {
+                // some O(1) expressions
+                Console.WriteLine("Expression at (" + i
+                                  + ", " + j + ")");
+            }
+        }
+ 
+        // Third loop
+        for (int i = n; i > 0; i -= c) {
+            for (int j = i - 1; j > 0; j -= c) {
+                // some O(1) expressions
+                Console.WriteLine("Expression at (" + i
+                                  + ", " + j + ")");
+            }
+        }
+    }
+
+
+4. 
+ static void Main(string[] args)
+    {
+        int n = 10; // assuming n is some integer value
+        int c = 2; // assuming c is some integer value
+ 
+        // Loop to iterate through powers of c up to n
+        for (int i = 1; i <= n; i *= c) {
+            // O(1) expressions here
+            Console.WriteLine("i = " + i);
+        }
+ 
+        // Loop to iterate through powers of c down from n
+        for (int i = n; i > 0; i /= c) {
+            // O(1) expressions here
+            Console.WriteLine("i = " + i);
+        }
+    }
+
+5. 
+public class Main
+{
+    public static void Execute(string[] args)
+    {
+        int n = 100; // Example value of n
+        int c = 2;   // Example value of c
+        // Here c is a constant greater than 1
+        for (int i = 2; i <= n; i = (int)Math.Pow(i, c))
+        {
+            // some O(1) expressions
+            Console.WriteLine(i); // For demonstration
+        }
+ 
+        // Here fun() is sqrt or cuberoot or any other constant root
+        for (int i = n; i > 1; i = fun(i))
+        {
+            // some O(1) expressions
+            Console.WriteLine(i); // For demonstration
+        }
+    }
+ 
+    // Function to find constant root (e.g., sqrt, cuberoot)
+    public static int fun(int num)
+    {
+        // Here, let's consider finding the square root
+        return (int)Math.Sqrt(num);
+    }
+}
+
+6. 
+Finonaci recursive Algorithms?
